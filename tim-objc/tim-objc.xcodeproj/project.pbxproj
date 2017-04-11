@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1FFB94161E9D1B390064844E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFB94151E9D1B390064844E /* main.m */; };
+		1FFB94191E9D1B390064844E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFB94181E9D1B390064844E /* AppDelegate.m */; };
+		1FFB941C1E9D1B390064844E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFB941B1E9D1B390064844E /* ViewController.m */; };
+		1FFB941F1E9D1B390064844E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FFB941D1E9D1B390064844E /* Main.storyboard */; };
+		1FFB94211E9D1B390064844E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FFB94201E9D1B390064844E /* Assets.xcassets */; };
+		1FFB94241E9D1B390064844E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FFB94221E9D1B390064844E /* LaunchScreen.storyboard */; };
+		1FFB948C1E9D1B940064844E /* AckManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFB942D1E9D1B940064844E /* AckManager.m */; };
+		1FFB948D1E9D1B940064844E /* C2sClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFB942F1E9D1B940064844E /* C2sClient.m */; };
+		1FFB948E1E9D1B940064844E /* ClientFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFB94311E9D1B940064844E /* ClientFactory.m */; };
+		1FFB948F1E9D1B940064844E /* ClientImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFB94331E9D1B940064844E /* ClientImpl.m */; };
+		1FFB94901E9D1B940064844E /* ClientProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFB94351E9D1B940064844E /* ClientProxy.m */; };
+		1FFB94911E9D1B940064844E /* ClientSub.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFB94371E9D1B940064844E /* ClientSub.m */; };
+		1FFB94921E9D1B940064844E /* ConnectImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFB94391E9D1B940064844E /* ConnectImpl.m */; };
+		1FFB94931E9D1B940064844E /* IfaceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFB943B1E9D1B940064844E /* IfaceImpl.m */; };
+		1FFB94941E9D1B940064844E /* ITimImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFB943D1E9D1B940064844E /* ITimImpl.m */; };
+		1FFB94951E9D1B940064844E /* MessageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFB943F1E9D1B940064844E /* MessageManager.m */; };
+		1FFB94961E9D1B940064844E /* TimManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFB94411E9D1B940064844E /* TimManager.m */; };
+		1FFB94971E9D1B940064844E /* TimUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFB94431E9D1B940064844E /* TimUtils.m */; };
+		1FFB94981E9D1B940064844E /* TPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFB94451E9D1B940064844E /* TPClient.m */; };
+		1FFB94991E9D1B940064844E /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFB94481E9D1B940064844E /* Config.m */; };
+		1FFB949A1E9D1B940064844E /* TimException.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFB94511E9D1B940064844E /* TimException.m */; };
+		1FFB949B1E9D1B940064844E /* TIMService.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFB94541E9D1B940064844E /* TIMService.m */; };
+		1FFB949C1E9D1B940064844E /* TBinaryProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFB945A1E9D1B940064844E /* TBinaryProtocol.m */; };
+		1FFB949D1E9D1B940064844E /* TCompactProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFB945C1E9D1B940064844E /* TCompactProtocol.m */; };
+		1FFB949E1E9D1B940064844E /* TMultiplexedProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFB945E1E9D1B940064844E /* TMultiplexedProtocol.m */; };
+		1FFB949F1E9D1B940064844E /* TProtocolDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFB94611E9D1B940064844E /* TProtocolDecorator.m */; };
+		1FFB94A01E9D1B940064844E /* TProtocolException.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFB94631E9D1B940064844E /* TProtocolException.m */; };
+		1FFB94A11E9D1B940064844E /* TProtocolUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFB94661E9D1B940064844E /* TProtocolUtil.m */; };
+		1FFB94A21E9D1B940064844E /* TSocketServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFB94691E9D1B940064844E /* TSocketServer.m */; };
+		1FFB94A31E9D1B940064844E /* TApplicationException.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFB946B1E9D1B940064844E /* TApplicationException.m */; };
+		1FFB94A41E9D1B940064844E /* TBaseClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFB946D1E9D1B940064844E /* TBaseClient.m */; };
+		1FFB94A51E9D1B940064844E /* TException.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFB946F1E9D1B940064844E /* TException.m */; };
+		1FFB94A61E9D1B940064844E /* TFramedTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFB94771E9D1B940064844E /* TFramedTransport.m */; };
+		1FFB94A71E9D1B940064844E /* THTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFB94791E9D1B940064844E /* THTTPClient.m */; };
+		1FFB94A81E9D1B940064844E /* TMemoryBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFB947B1E9D1B940064844E /* TMemoryBuffer.m */; };
+		1FFB94A91E9D1B940064844E /* TNSFileHandleTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFB947D1E9D1B940064844E /* TNSFileHandleTransport.m */; };
+		1FFB94AA1E9D1B940064844E /* TNSStreamTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFB947F1E9D1B940064844E /* TNSStreamTransport.m */; };
+		1FFB94AB1E9D1B940064844E /* TSocketClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFB94811E9D1B940064844E /* TSocketClient.m */; };
+		1FFB94AC1E9D1B940064844E /* TSSLSocketClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFB94831E9D1B940064844E /* TSSLSocketClient.m */; };
+		1FFB94AD1E9D1B940064844E /* TSSLSocketException.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFB94851E9D1B940064844E /* TSSLSocketException.m */; };
+		1FFB94AE1E9D1B940064844E /* TTransportException.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFB94881E9D1B940064844E /* TTransportException.m */; };
+		1FFB94AF1E9D1B940064844E /* TSharedProcessorFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFB948A1E9D1B940064844E /* TSharedProcessorFactory.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1FFB94111E9D1B390064844E /* tim-objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tim-objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FFB94151E9D1B390064844E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1FFB94171E9D1B390064844E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1FFB94181E9D1B390064844E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1FFB941A1E9D1B390064844E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1FFB941B1E9D1B390064844E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1FFB941E1E9D1B390064844E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1FFB94201E9D1B390064844E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1FFB94231E9D1B390064844E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1FFB94251E9D1B390064844E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FFB942C1E9D1B940064844E /* AckManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AckManager.h; sourceTree = "<group>"; };
+		1FFB942D1E9D1B940064844E /* AckManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AckManager.m; sourceTree = "<group>"; };
+		1FFB942E1E9D1B940064844E /* C2sClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = C2sClient.h; sourceTree = "<group>"; };
+		1FFB942F1E9D1B940064844E /* C2sClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = C2sClient.m; sourceTree = "<group>"; };
+		1FFB94301E9D1B940064844E /* ClientFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientFactory.h; sourceTree = "<group>"; };
+		1FFB94311E9D1B940064844E /* ClientFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientFactory.m; sourceTree = "<group>"; };
+		1FFB94321E9D1B940064844E /* ClientImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientImpl.h; sourceTree = "<group>"; };
+		1FFB94331E9D1B940064844E /* ClientImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientImpl.m; sourceTree = "<group>"; };
+		1FFB94341E9D1B940064844E /* ClientProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientProxy.h; sourceTree = "<group>"; };
+		1FFB94351E9D1B940064844E /* ClientProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientProxy.m; sourceTree = "<group>"; };
+		1FFB94361E9D1B940064844E /* ClientSub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientSub.h; sourceTree = "<group>"; };
+		1FFB94371E9D1B940064844E /* ClientSub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientSub.m; sourceTree = "<group>"; };
+		1FFB94381E9D1B940064844E /* ConnectImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectImpl.h; sourceTree = "<group>"; };
+		1FFB94391E9D1B940064844E /* ConnectImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectImpl.m; sourceTree = "<group>"; };
+		1FFB943A1E9D1B940064844E /* IfaceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IfaceImpl.h; sourceTree = "<group>"; };
+		1FFB943B1E9D1B940064844E /* IfaceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IfaceImpl.m; sourceTree = "<group>"; };
+		1FFB943C1E9D1B940064844E /* ITimImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITimImpl.h; sourceTree = "<group>"; };
+		1FFB943D1E9D1B940064844E /* ITimImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITimImpl.m; sourceTree = "<group>"; };
+		1FFB943E1E9D1B940064844E /* MessageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageManager.h; sourceTree = "<group>"; };
+		1FFB943F1E9D1B940064844E /* MessageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageManager.m; sourceTree = "<group>"; };
+		1FFB94401E9D1B940064844E /* TimManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimManager.h; sourceTree = "<group>"; };
+		1FFB94411E9D1B940064844E /* TimManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimManager.m; sourceTree = "<group>"; };
+		1FFB94421E9D1B940064844E /* TimUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimUtils.h; sourceTree = "<group>"; };
+		1FFB94431E9D1B940064844E /* TimUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimUtils.m; sourceTree = "<group>"; };
+		1FFB94441E9D1B940064844E /* TPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPClient.h; sourceTree = "<group>"; };
+		1FFB94451E9D1B940064844E /* TPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPClient.m; sourceTree = "<group>"; };
+		1FFB94471E9D1B940064844E /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		1FFB94481E9D1B940064844E /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
+		1FFB944A1E9D1B940064844E /* AckDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AckDelegate.h; sourceTree = "<group>"; };
+		1FFB944B1E9D1B940064844E /* ClientDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientDelegate.h; sourceTree = "<group>"; };
+		1FFB944C1E9D1B940064844E /* ConnectDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectDelegate.h; sourceTree = "<group>"; };
+		1FFB944D1E9D1B940064844E /* MessageDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageDelegate.h; sourceTree = "<group>"; };
+		1FFB944E1E9D1B940064844E /* PresenceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresenceDelegate.h; sourceTree = "<group>"; };
+		1FFB94501E9D1B940064844E /* TimException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimException.h; sourceTree = "<group>"; };
+		1FFB94511E9D1B940064844E /* TimException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimException.m; sourceTree = "<group>"; };
+		1FFB94531E9D1B940064844E /* TIMService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TIMService.h; sourceTree = "<group>"; };
+		1FFB94541E9D1B940064844E /* TIMService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TIMService.m; sourceTree = "<group>"; };
+		1FFB94551E9D1B940064844E /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		1FFB94581E9D1B940064844E /* TBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBase.h; sourceTree = "<group>"; };
+		1FFB94591E9D1B940064844E /* TBinaryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBinaryProtocol.h; sourceTree = "<group>"; };
+		1FFB945A1E9D1B940064844E /* TBinaryProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBinaryProtocol.m; sourceTree = "<group>"; };
+		1FFB945B1E9D1B940064844E /* TCompactProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCompactProtocol.h; sourceTree = "<group>"; };
+		1FFB945C1E9D1B940064844E /* TCompactProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCompactProtocol.m; sourceTree = "<group>"; };
+		1FFB945D1E9D1B940064844E /* TMultiplexedProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMultiplexedProtocol.h; sourceTree = "<group>"; };
+		1FFB945E1E9D1B940064844E /* TMultiplexedProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMultiplexedProtocol.m; sourceTree = "<group>"; };
+		1FFB945F1E9D1B940064844E /* TProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProtocol.h; sourceTree = "<group>"; };
+		1FFB94601E9D1B940064844E /* TProtocolDecorator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProtocolDecorator.h; sourceTree = "<group>"; };
+		1FFB94611E9D1B940064844E /* TProtocolDecorator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TProtocolDecorator.m; sourceTree = "<group>"; };
+		1FFB94621E9D1B940064844E /* TProtocolException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProtocolException.h; sourceTree = "<group>"; };
+		1FFB94631E9D1B940064844E /* TProtocolException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TProtocolException.m; sourceTree = "<group>"; };
+		1FFB94641E9D1B940064844E /* TProtocolFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProtocolFactory.h; sourceTree = "<group>"; };
+		1FFB94651E9D1B940064844E /* TProtocolUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProtocolUtil.h; sourceTree = "<group>"; };
+		1FFB94661E9D1B940064844E /* TProtocolUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TProtocolUtil.m; sourceTree = "<group>"; };
+		1FFB94681E9D1B940064844E /* TSocketServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSocketServer.h; sourceTree = "<group>"; };
+		1FFB94691E9D1B940064844E /* TSocketServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSocketServer.m; sourceTree = "<group>"; };
+		1FFB946A1E9D1B940064844E /* TApplicationException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TApplicationException.h; sourceTree = "<group>"; };
+		1FFB946B1E9D1B940064844E /* TApplicationException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TApplicationException.m; sourceTree = "<group>"; };
+		1FFB946C1E9D1B940064844E /* TBaseClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBaseClient.h; sourceTree = "<group>"; };
+		1FFB946D1E9D1B940064844E /* TBaseClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBaseClient.m; sourceTree = "<group>"; };
+		1FFB946E1E9D1B940064844E /* TException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TException.h; sourceTree = "<group>"; };
+		1FFB946F1E9D1B940064844E /* TException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TException.m; sourceTree = "<group>"; };
+		1FFB94701E9D1B940064844E /* Thrift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Thrift.h; sourceTree = "<group>"; };
+		1FFB94711E9D1B940064844E /* TObjective-C.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TObjective-C.h"; sourceTree = "<group>"; };
+		1FFB94721E9D1B940064844E /* TProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProcessor.h; sourceTree = "<group>"; };
+		1FFB94731E9D1B940064844E /* TProcessorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TProcessorFactory.h; sourceTree = "<group>"; };
+		1FFB94751E9D1B940064844E /* TAsyncTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAsyncTransport.h; sourceTree = "<group>"; };
+		1FFB94761E9D1B940064844E /* TFramedTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFramedTransport.h; sourceTree = "<group>"; };
+		1FFB94771E9D1B940064844E /* TFramedTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFramedTransport.m; sourceTree = "<group>"; };
+		1FFB94781E9D1B940064844E /* THTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THTTPClient.h; sourceTree = "<group>"; };
+		1FFB94791E9D1B940064844E /* THTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THTTPClient.m; sourceTree = "<group>"; };
+		1FFB947A1E9D1B940064844E /* TMemoryBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMemoryBuffer.h; sourceTree = "<group>"; };
+		1FFB947B1E9D1B940064844E /* TMemoryBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMemoryBuffer.m; sourceTree = "<group>"; };
+		1FFB947C1E9D1B940064844E /* TNSFileHandleTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNSFileHandleTransport.h; sourceTree = "<group>"; };
+		1FFB947D1E9D1B940064844E /* TNSFileHandleTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSFileHandleTransport.m; sourceTree = "<group>"; };
+		1FFB947E1E9D1B940064844E /* TNSStreamTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNSStreamTransport.h; sourceTree = "<group>"; };
+		1FFB947F1E9D1B940064844E /* TNSStreamTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNSStreamTransport.m; sourceTree = "<group>"; };
+		1FFB94801E9D1B940064844E /* TSocketClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSocketClient.h; sourceTree = "<group>"; };
+		1FFB94811E9D1B940064844E /* TSocketClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSocketClient.m; sourceTree = "<group>"; };
+		1FFB94821E9D1B940064844E /* TSSLSocketClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSSLSocketClient.h; sourceTree = "<group>"; };
+		1FFB94831E9D1B940064844E /* TSSLSocketClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSSLSocketClient.m; sourceTree = "<group>"; };
+		1FFB94841E9D1B940064844E /* TSSLSocketException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSSLSocketException.h; sourceTree = "<group>"; };
+		1FFB94851E9D1B940064844E /* TSSLSocketException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSSLSocketException.m; sourceTree = "<group>"; };
+		1FFB94861E9D1B940064844E /* TTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTransport.h; sourceTree = "<group>"; };
+		1FFB94871E9D1B940064844E /* TTransportException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTransportException.h; sourceTree = "<group>"; };
+		1FFB94881E9D1B940064844E /* TTransportException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTransportException.m; sourceTree = "<group>"; };
+		1FFB94891E9D1B940064844E /* TSharedProcessorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSharedProcessorFactory.h; sourceTree = "<group>"; };
+		1FFB948A1E9D1B940064844E /* TSharedProcessorFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSharedProcessorFactory.m; sourceTree = "<group>"; };
+		1FFB948B1E9D1B940064844E /* TimEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimEnum.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FFB940E1E9D1B390064844E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FFB94081E9D1B390064844E = {
+			isa = PBXGroup;
+			children = (
+				1FFB94131E9D1B390064844E /* tim-objc */,
+				1FFB94121E9D1B390064844E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1FFB94121E9D1B390064844E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FFB94111E9D1B390064844E /* tim-objc.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FFB94131E9D1B390064844E /* tim-objc */ = {
+			isa = PBXGroup;
+			children = (
+				1FFB94171E9D1B390064844E /* AppDelegate.h */,
+				1FFB94181E9D1B390064844E /* AppDelegate.m */,
+				1FFB941A1E9D1B390064844E /* ViewController.h */,
+				1FFB941B1E9D1B390064844E /* ViewController.m */,
+				1FFB941D1E9D1B390064844E /* Main.storyboard */,
+				1FFB942B1E9D1B940064844E /* client */,
+				1FFB94461E9D1B940064844E /* config */,
+				1FFB94491E9D1B940064844E /* delegate */,
+				1FFB944F1E9D1B940064844E /* exception */,
+				1FFB94521E9D1B940064844E /* gen-cocoa */,
+				1FFB94551E9D1B940064844E /* Singleton.h */,
+				1FFB94561E9D1B940064844E /* thrift0.9.3 */,
+				1FFB948B1E9D1B940064844E /* TimEnum.h */,
+				1FFB94201E9D1B390064844E /* Assets.xcassets */,
+				1FFB94221E9D1B390064844E /* LaunchScreen.storyboard */,
+				1FFB94251E9D1B390064844E /* Info.plist */,
+				1FFB94141E9D1B390064844E /* Supporting Files */,
+			);
+			path = "tim-objc";
+			sourceTree = "<group>";
+		};
+		1FFB94141E9D1B390064844E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1FFB94151E9D1B390064844E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1FFB942B1E9D1B940064844E /* client */ = {
+			isa = PBXGroup;
+			children = (
+				1FFB942C1E9D1B940064844E /* AckManager.h */,
+				1FFB942D1E9D1B940064844E /* AckManager.m */,
+				1FFB942E1E9D1B940064844E /* C2sClient.h */,
+				1FFB942F1E9D1B940064844E /* C2sClient.m */,
+				1FFB94301E9D1B940064844E /* ClientFactory.h */,
+				1FFB94311E9D1B940064844E /* ClientFactory.m */,
+				1FFB94321E9D1B940064844E /* ClientImpl.h */,
+				1FFB94331E9D1B940064844E /* ClientImpl.m */,
+				1FFB94341E9D1B940064844E /* ClientProxy.h */,
+				1FFB94351E9D1B940064844E /* ClientProxy.m */,
+				1FFB94361E9D1B940064844E /* ClientSub.h */,
+				1FFB94371E9D1B940064844E /* ClientSub.m */,
+				1FFB94381E9D1B940064844E /* ConnectImpl.h */,
+				1FFB94391E9D1B940064844E /* ConnectImpl.m */,
+				1FFB943A1E9D1B940064844E /* IfaceImpl.h */,
+				1FFB943B1E9D1B940064844E /* IfaceImpl.m */,
+				1FFB943C1E9D1B940064844E /* ITimImpl.h */,
+				1FFB943D1E9D1B940064844E /* ITimImpl.m */,
+				1FFB943E1E9D1B940064844E /* MessageManager.h */,
+				1FFB943F1E9D1B940064844E /* MessageManager.m */,
+				1FFB94401E9D1B940064844E /* TimManager.h */,
+				1FFB94411E9D1B940064844E /* TimManager.m */,
+				1FFB94421E9D1B940064844E /* TimUtils.h */,
+				1FFB94431E9D1B940064844E /* TimUtils.m */,
+				1FFB94441E9D1B940064844E /* TPClient.h */,
+				1FFB94451E9D1B940064844E /* TPClient.m */,
+			);
+			path = client;
+			sourceTree = "<group>";
+		};
+		1FFB94461E9D1B940064844E /* config */ = {
+			isa = PBXGroup;
+			children = (
+				1FFB94471E9D1B940064844E /* Config.h */,
+				1FFB94481E9D1B940064844E /* Config.m */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		1FFB94491E9D1B940064844E /* delegate */ = {
+			isa = PBXGroup;
+			children = (
+				1FFB944A1E9D1B940064844E /* AckDelegate.h */,
+				1FFB944B1E9D1B940064844E /* ClientDelegate.h */,
+				1FFB944C1E9D1B940064844E /* ConnectDelegate.h */,
+				1FFB944D1E9D1B940064844E /* MessageDelegate.h */,
+				1FFB944E1E9D1B940064844E /* PresenceDelegate.h */,
+			);
+			path = delegate;
+			sourceTree = "<group>";
+		};
+		1FFB944F1E9D1B940064844E /* exception */ = {
+			isa = PBXGroup;
+			children = (
+				1FFB94501E9D1B940064844E /* TimException.h */,
+				1FFB94511E9D1B940064844E /* TimException.m */,
+			);
+			path = exception;
+			sourceTree = "<group>";
+		};
+		1FFB94521E9D1B940064844E /* gen-cocoa */ = {
+			isa = PBXGroup;
+			children = (
+				1FFB94531E9D1B940064844E /* TIMService.h */,
+				1FFB94541E9D1B940064844E /* TIMService.m */,
+			);
+			path = "gen-cocoa";
+			sourceTree = "<group>";
+		};
+		1FFB94561E9D1B940064844E /* thrift0.9.3 */ = {
+			isa = PBXGroup;
+			children = (
+				1FFB94571E9D1B940064844E /* protocol */,
+				1FFB94671E9D1B940064844E /* server */,
+				1FFB946A1E9D1B940064844E /* TApplicationException.h */,
+				1FFB946B1E9D1B940064844E /* TApplicationException.m */,
+				1FFB946C1E9D1B940064844E /* TBaseClient.h */,
+				1FFB946D1E9D1B940064844E /* TBaseClient.m */,
+				1FFB946E1E9D1B940064844E /* TException.h */,
+				1FFB946F1E9D1B940064844E /* TException.m */,
+				1FFB94701E9D1B940064844E /* Thrift.h */,
+				1FFB94711E9D1B940064844E /* TObjective-C.h */,
+				1FFB94721E9D1B940064844E /* TProcessor.h */,
+				1FFB94731E9D1B940064844E /* TProcessorFactory.h */,
+				1FFB94741E9D1B940064844E /* transport */,
+				1FFB94891E9D1B940064844E /* TSharedProcessorFactory.h */,
+				1FFB948A1E9D1B940064844E /* TSharedProcessorFactory.m */,
+			);
+			path = thrift0.9.3;
+			sourceTree = "<group>";
+		};
+		1FFB94571E9D1B940064844E /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				1FFB94581E9D1B940064844E /* TBase.h */,
+				1FFB94591E9D1B940064844E /* TBinaryProtocol.h */,
+				1FFB945A1E9D1B940064844E /* TBinaryProtocol.m */,
+				1FFB945B1E9D1B940064844E /* TCompactProtocol.h */,
+				1FFB945C1E9D1B940064844E /* TCompactProtocol.m */,
+				1FFB945D1E9D1B940064844E /* TMultiplexedProtocol.h */,
+				1FFB945E1E9D1B940064844E /* TMultiplexedProtocol.m */,
+				1FFB945F1E9D1B940064844E /* TProtocol.h */,
+				1FFB94601E9D1B940064844E /* TProtocolDecorator.h */,
+				1FFB94611E9D1B940064844E /* TProtocolDecorator.m */,
+				1FFB94621E9D1B940064844E /* TProtocolException.h */,
+				1FFB94631E9D1B940064844E /* TProtocolException.m */,
+				1FFB94641E9D1B940064844E /* TProtocolFactory.h */,
+				1FFB94651E9D1B940064844E /* TProtocolUtil.h */,
+				1FFB94661E9D1B940064844E /* TProtocolUtil.m */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		1FFB94671E9D1B940064844E /* server */ = {
+			isa = PBXGroup;
+			children = (
+				1FFB94681E9D1B940064844E /* TSocketServer.h */,
+				1FFB94691E9D1B940064844E /* TSocketServer.m */,
+			);
+			path = server;
+			sourceTree = "<group>";
+		};
+		1FFB94741E9D1B940064844E /* transport */ = {
+			isa = PBXGroup;
+			children = (
+				1FFB94751E9D1B940064844E /* TAsyncTransport.h */,
+				1FFB94761E9D1B940064844E /* TFramedTransport.h */,
+				1FFB94771E9D1B940064844E /* TFramedTransport.m */,
+				1FFB94781E9D1B940064844E /* THTTPClient.h */,
+				1FFB94791E9D1B940064844E /* THTTPClient.m */,
+				1FFB947A1E9D1B940064844E /* TMemoryBuffer.h */,
+				1FFB947B1E9D1B940064844E /* TMemoryBuffer.m */,
+				1FFB947C1E9D1B940064844E /* TNSFileHandleTransport.h */,
+				1FFB947D1E9D1B940064844E /* TNSFileHandleTransport.m */,
+				1FFB947E1E9D1B940064844E /* TNSStreamTransport.h */,
+				1FFB947F1E9D1B940064844E /* TNSStreamTransport.m */,
+				1FFB94801E9D1B940064844E /* TSocketClient.h */,
+				1FFB94811E9D1B940064844E /* TSocketClient.m */,
+				1FFB94821E9D1B940064844E /* TSSLSocketClient.h */,
+				1FFB94831E9D1B940064844E /* TSSLSocketClient.m */,
+				1FFB94841E9D1B940064844E /* TSSLSocketException.h */,
+				1FFB94851E9D1B940064844E /* TSSLSocketException.m */,
+				1FFB94861E9D1B940064844E /* TTransport.h */,
+				1FFB94871E9D1B940064844E /* TTransportException.h */,
+				1FFB94881E9D1B940064844E /* TTransportException.m */,
+			);
+			path = transport;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1FFB94101E9D1B390064844E /* tim-objc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FFB94281E9D1B390064844E /* Build configuration list for PBXNativeTarget "tim-objc" */;
+			buildPhases = (
+				1FFB940D1E9D1B390064844E /* Sources */,
+				1FFB940E1E9D1B390064844E /* Frameworks */,
+				1FFB940F1E9D1B390064844E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "tim-objc";
+			productName = "tim-objc";
+			productReference = 1FFB94111E9D1B390064844E /* tim-objc.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1FFB94091E9D1B390064844E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = tim;
+				TargetAttributes = {
+					1FFB94101E9D1B390064844E = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 7TR2N5ABV6;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1FFB940C1E9D1B390064844E /* Build configuration list for PBXProject "tim-objc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1FFB94081E9D1B390064844E;
+			productRefGroup = 1FFB94121E9D1B390064844E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1FFB94101E9D1B390064844E /* tim-objc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1FFB940F1E9D1B390064844E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FFB94241E9D1B390064844E /* LaunchScreen.storyboard in Resources */,
+				1FFB94211E9D1B390064844E /* Assets.xcassets in Resources */,
+				1FFB941F1E9D1B390064844E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FFB940D1E9D1B390064844E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FFB94AD1E9D1B940064844E /* TSSLSocketException.m in Sources */,
+				1FFB94A91E9D1B940064844E /* TNSFileHandleTransport.m in Sources */,
+				1FFB941C1E9D1B390064844E /* ViewController.m in Sources */,
+				1FFB94931E9D1B940064844E /* IfaceImpl.m in Sources */,
+				1FFB94AF1E9D1B940064844E /* TSharedProcessorFactory.m in Sources */,
+				1FFB949A1E9D1B940064844E /* TimException.m in Sources */,
+				1FFB94A71E9D1B940064844E /* THTTPClient.m in Sources */,
+				1FFB94911E9D1B940064844E /* ClientSub.m in Sources */,
+				1FFB949D1E9D1B940064844E /* TCompactProtocol.m in Sources */,
+				1FFB94AC1E9D1B940064844E /* TSSLSocketClient.m in Sources */,
+				1FFB94921E9D1B940064844E /* ConnectImpl.m in Sources */,
+				1FFB94A21E9D1B940064844E /* TSocketServer.m in Sources */,
+				1FFB94961E9D1B940064844E /* TimManager.m in Sources */,
+				1FFB94AE1E9D1B940064844E /* TTransportException.m in Sources */,
+				1FFB94991E9D1B940064844E /* Config.m in Sources */,
+				1FFB94901E9D1B940064844E /* ClientProxy.m in Sources */,
+				1FFB94951E9D1B940064844E /* MessageManager.m in Sources */,
+				1FFB94971E9D1B940064844E /* TimUtils.m in Sources */,
+				1FFB94981E9D1B940064844E /* TPClient.m in Sources */,
+				1FFB948C1E9D1B940064844E /* AckManager.m in Sources */,
+				1FFB94941E9D1B940064844E /* ITimImpl.m in Sources */,
+				1FFB94191E9D1B390064844E /* AppDelegate.m in Sources */,
+				1FFB94A81E9D1B940064844E /* TMemoryBuffer.m in Sources */,
+				1FFB94AB1E9D1B940064844E /* TSocketClient.m in Sources */,
+				1FFB94A11E9D1B940064844E /* TProtocolUtil.m in Sources */,
+				1FFB949B1E9D1B940064844E /* TIMService.m in Sources */,
+				1FFB94A51E9D1B940064844E /* TException.m in Sources */,
+				1FFB949E1E9D1B940064844E /* TMultiplexedProtocol.m in Sources */,
+				1FFB949C1E9D1B940064844E /* TBinaryProtocol.m in Sources */,
+				1FFB948E1E9D1B940064844E /* ClientFactory.m in Sources */,
+				1FFB94A31E9D1B940064844E /* TApplicationException.m in Sources */,
+				1FFB94A41E9D1B940064844E /* TBaseClient.m in Sources */,
+				1FFB949F1E9D1B940064844E /* TProtocolDecorator.m in Sources */,
+				1FFB94A61E9D1B940064844E /* TFramedTransport.m in Sources */,
+				1FFB94A01E9D1B940064844E /* TProtocolException.m in Sources */,
+				1FFB94161E9D1B390064844E /* main.m in Sources */,
+				1FFB94AA1E9D1B940064844E /* TNSStreamTransport.m in Sources */,
+				1FFB948D1E9D1B940064844E /* C2sClient.m in Sources */,
+				1FFB948F1E9D1B940064844E /* ClientImpl.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1FFB941D1E9D1B390064844E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FFB941E1E9D1B390064844E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1FFB94221E9D1B390064844E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FFB94231E9D1B390064844E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1FFB94261E9D1B390064844E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1FFB94271E9D1B390064844E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1FFB94291E9D1B390064844E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7TR2N5ABV6;
+				INFOPLIST_FILE = "tim-objc/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.liao27.tim-objc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1FFB942A1E9D1B390064844E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7TR2N5ABV6;
+				INFOPLIST_FILE = "tim-objc/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.liao27.tim-objc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FFB940C1E9D1B390064844E /* Build configuration list for PBXProject "tim-objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FFB94261E9D1B390064844E /* Debug */,
+				1FFB94271E9D1B390064844E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FFB94281E9D1B390064844E /* Build configuration list for PBXNativeTarget "tim-objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FFB94291E9D1B390064844E /* Debug */,
+				1FFB942A1E9D1B390064844E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1FFB94091E9D1B390064844E /* Project object */;
+}
